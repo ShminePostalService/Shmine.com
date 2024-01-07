@@ -8,8 +8,20 @@
   height: 350px;
   background-color: #111111;
   margin : -5px;
-
 }
+
+.divtable {
+  float : left;
+  position: absolute;
+  top: 550px;
+  left: 5px;
+  border: 5px solid #999999;
+  width : 150px;
+  height: 350px;
+  background-color: #111111;
+  margin : -5px;
+}
+
 
 .maindiv {
   float : top;
