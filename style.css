@@ -240,11 +240,13 @@ transition: 1s;
 
 div.gallery {
   border: 1px solid #ccc;
+	background-color : #222222;
 }
 
 
 div.gallery:hover {
   border: 3px solid #777;
+		background-color : #444444;
 }
 
 div.gallery img {
@@ -307,4 +309,48 @@ margin : auto;
   content: "";
   display: table;
   clear: both;
+}
+
+
+/* For Collapsibles   */
+
+
+.collapsible {
+  background-color: #222222;
+	position : relative;
+  margin-left: 42%;
+	margin-right: 42%;
+	margin-top: 10px;
+	margin-bottom : 10px;
+  cursor: pointer;
+  width: 16%;
+	height : 60px;
+  text-align: center;
+  outline: none;
+	border : 1px solid #999999;
+  font-size: 16px;
+	color : white;
+	font-family: monospace;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
 }

@@ -42,16 +42,14 @@ width:180px">
 </div>
 
 
-<!-- This is the update template!!!
-<div class="updatediv">
-  <article>
-  <h4><sup> Date </sup></h4>
-<p>
-<b><i>*SKRAAAAAAW!!!*</i></b><br><br>
-  </p>
-  </article>
--->
+<div class="maindiv">
+<p>Below we have a gallery of cards from the Shmines of Ruquosquak set of
+Shmine the Gathering. Thank you Wizards of the Coast, even if Hasbro is a
+schwab corporation, I'LL still keep giving you my money :^) </p>
+</div>
 
+<button type="button" class="collapsible">View Gallery</button>
+<div class="content">
 
 <!-- First Row -->
 <div class="responsive">
@@ -316,6 +314,7 @@ width:180px">
 <div class="clearfix"></div>
 -->
 
+</div>
 
 
 <!-- Navigation -->
@@ -344,4 +343,24 @@ width:180px">
       <a href="language.html">
           <li>Language</li></a>
         </ul>
+
+</body>
+
+<!-- This is for the collapsibles -->
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 </html>
